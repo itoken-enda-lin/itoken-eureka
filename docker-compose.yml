@@ -1,8 +1,20 @@
 version: "3.1"
 services:
-  itoken-eureka:
+  itoken-eureka-1:
     restart: always
     image: itoken-eureka
-    container_name: itoken-eureka
+    container_name: itoken-eureka-1
+    ports:
+      - 8761:8761
+  itoken-eureka-2:
+    restart: always
+    image: itoken-eureka
+    container_name: itoken-eureka-2
+    ports:
+      - 8761:8761
+  itoken-eureka-3:
+    restart: always
+    image: itoken-eureka
+    container_name: itoken-eureka-3
     ports:
       - 8761:8761

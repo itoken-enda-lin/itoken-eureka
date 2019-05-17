@@ -4,17 +4,36 @@ services:
     restart: always
     image: itoken-eureka
     container_name: itoken-eureka-1
+    hostname: itoken-eureka-1
     ports:
       - 8761:8761
+    networks:
+      - eureka-net
+    environment:
+      - spring.profiles.active=itoken-eureka-1
   itoken-eureka-2:
     restart: always
     image: itoken-eureka
     container_name: itoken-eureka-2
+    hostname: itoken-eureka-2
     ports:
-      - 8761:8761
+      - 8861:8861
+    networks:
+      - eureka-net
+    environment:
+      - spring.profiles.active=itoken-eureka-2
   itoken-eureka-3:
     restart: always
     image: itoken-eureka
     container_name: itoken-eureka-3
+    hostname: itoken-eureka-3
     ports:
-      - 8761:8761
+      - 8961:8961
+    networks:
+      - eureka-net
+    environment:
+      - spring.profiles.active=itoken-eureka-3
+
+networks:
+  eureka-net:
+    driver: bridge

@@ -8,4 +8,4 @@ RUN cd /itoken \
 
 ENTRYPOINT [ "java", "-jar", "/itoken/target/itoken-eureka-1.0.0-SNAPSHOT.jar" ]
 
-EXPOSE 8761
+EXPOSE 8761 8861 8961

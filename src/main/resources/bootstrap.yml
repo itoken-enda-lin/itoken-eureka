@@ -4,4 +4,3 @@ spring:
       uri: http://172.28.7.47:8888
       name: itoken-eureka
       label: master
-      profile: ${ACTIVE_PROFILE:dev}

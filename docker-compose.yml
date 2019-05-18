@@ -10,7 +10,7 @@ services:
     networks:
       - eureka-net
     environment:
-      - SPRING_PROFILES_INCLUDE=dev,dev@1
+      - SPRING_PROFILES_INCLUDE=dev@1
   itoken-eureka-2:
     restart: always
     image: itoken-eureka
@@ -21,7 +21,7 @@ services:
     networks:
       - eureka-net
     environment:
-      - SPRING_PROFILES_INCLUDE=dev,dev@2
+      - SPRING_PROFILES_INCLUDE=dev@2
   itoken-eureka-3:
     restart: always
     image: itoken-eureka
@@ -32,7 +32,7 @@ services:
     networks:
       - eureka-net
     environment:
-      - SPRING_PROFILES_INCLUDE=dev,dev@3
+      - SPRING_PROFILES_INCLUDE=dev@3
 
 networks:
   eureka-net:

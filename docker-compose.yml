@@ -11,6 +11,7 @@ services:
       - eureka-net
     environment:
       - SPRING_PROFILES_ACTIVE=dev@1
+      - HOST=172.28.7.46
   itoken-eureka-2:
     restart: always
     image: itoken-eureka
@@ -22,6 +23,7 @@ services:
       - eureka-net
     environment:
       - SPRING_PROFILES_ACTIVE=dev@2
+      - HOST=172.28.7.46
   itoken-eureka-3:
     restart: always
     image: itoken-eureka
@@ -33,6 +35,7 @@ services:
       - eureka-net
     environment:
       - SPRING_PROFILES_ACTIVE=dev@3
+      - HOST=172.28.7.46
 
 networks:
   eureka-net:

@@ -12,6 +12,7 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=dev@1
       - spring.cloud.inetutils.ignored-interfaces=docker0,br-*
+      - spring.cloud.inetutils.preferredNetworks=172.28.7.46
   itoken-eureka-2:
     restart: always
     image: itoken-eureka
@@ -24,6 +25,7 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=dev@2
       - spring.cloud.inetutils.ignored-interfaces=docker0,br-*
+      - spring.cloud.inetutils.preferredNetworks=172.28.7.46
   itoken-eureka-3:
     restart: always
     image: itoken-eureka
@@ -36,6 +38,7 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE=dev@3
       - spring.cloud.inetutils.ignored-interfaces=docker0,br-*
+      - spring.cloud.inetutils.preferredNetworks=172.28.7.46
 
 networks:
   eureka-net:

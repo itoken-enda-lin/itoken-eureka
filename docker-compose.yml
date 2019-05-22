@@ -4,7 +4,7 @@ services:
     restart: always
     image: itoken-eureka
     container_name: itoken-eureka-1
-    hostname: 172.28.7.46
+    hostname: itoken-eureka-1
     ports:
       - 8761:8761
     networks:
@@ -16,7 +16,7 @@ services:
     restart: always
     image: itoken-eureka
     container_name: itoken-eureka-2
-    hostname: 172.28.7.46
+    hostname: itoken-eureka-2
     ports:
       - 8861:8861
     networks:
@@ -28,7 +28,7 @@ services:
     restart: always
     image: itoken-eureka
     container_name: itoken-eureka-3
-    hostname: 172.28.7.46
+    hostname: itoken-eureka-3
     ports:
       - 8961:8961
     networks:

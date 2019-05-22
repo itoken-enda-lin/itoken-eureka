@@ -8,7 +8,7 @@ services:
     ports:
       - 8761:8761
     networks:
-      - eureka-net
+      - bridge
     environment:
       - SPRING_PROFILES_ACTIVE=dev@1
       - HOST=172.28.7.46
@@ -20,7 +20,7 @@ services:
     ports:
       - 8861:8861
     networks:
-      - eureka-net
+      - bridge
     environment:
       - SPRING_PROFILES_ACTIVE=dev@2
       - HOST=172.28.7.46
@@ -32,7 +32,7 @@ services:
     ports:
       - 8961:8961
     networks:
-      - eureka-net
+      - bridge
     environment:
       - SPRING_PROFILES_ACTIVE=dev@3
       - HOST=172.28.7.46
